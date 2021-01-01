@@ -48,9 +48,8 @@ export default function Button(props) {
             )
         }
     }
-    return 
-    <button className={className.join(" ")} style={props.style} onClick={onClick}>
-    {props.children}
+    return  <button className={className.join(" ")} style={props.style} onClick={onClick}>
+        {props.children}
     </button>
 }
 
@@ -61,6 +60,7 @@ Button.propTypes = {
     target: propTypes.string,
     className : propTypes.string,
     isDisabled : propTypes.bool,
+    isPrimary : propTypes.bool,
     isLoading : propTypes.bool,
     isSmall: propTypes.bool,
     isLarge: propTypes.bool,
