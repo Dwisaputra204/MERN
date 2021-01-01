@@ -3,7 +3,7 @@ import Button from 'elements/Button'
 import ImageHero from "assets/images/img-hero.jpg";
 import ImageHero_ from "assets/images/img-hero-frame.jpg";
 import formatNumber from "utils/formatNumber";
-
+import Fade from 'react-reveal/Fade';
 export default function Hero(props) {
     function showMostPicked() {
         window.scrollTo({
@@ -14,6 +14,7 @@ export default function Hero(props) {
 
     
     return (
+        <Fade bottom>
         <section className="container pt-4">
             <div className="row align-items-center">
                 <div className="col-auto pr-5" style={{width: 522}}>
@@ -47,5 +48,6 @@ export default function Hero(props) {
                 </div>
             </div>
         </section>
+        </Fade>
     )
 }
